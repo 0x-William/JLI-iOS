@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    android:background="@drawable/bg_music_player"
+    android:gravity="center_horizontal" >
+
+    <include layout="@layout/layout_header" />
+
+    <LinearLayout
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_margin="15dp" >
+
+        <View
+            android:id="@+id/viewIndicatorList"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:background="@drawable/indicator_white" />
+
+        <View
+            android:id="@+id/viewIndicatorThumb"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/indicator_white" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        style="@style/Layout.Weight.HeightFillWidth" />
+
+    <LinearLayout
+        style="@style/Layout.FillWidth.Vertical"
+        android:layout_margin="10dp" >
+
+        <SeekBar
+            android:id="@+id/seekBarLength"
+            style="@style/Layout.Weight.Width"
+            android:layout_width="match_parent"
+            android:progressDrawable="@color/white"
+            android:layout_height="wrap_content"
+            android:maxHeight="1dp"/>
+
+        <RelativeLayout
+            style="@style/Layout.FillWidth"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblTimeCurrent"
+                style="@style/Text.WrapWidth"
+                android:text="@string/timeStart"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/lblTimeLength"
+                style="@style/Text.WrapWidth"
+                android:layout_alignParentRight="true"
+                android:text="@string/timeStart"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <ToggleButton
+            android:id="@+id/btnShuffle"
+            style="@style/ToggleButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_shuffle" />
+
+        <com.pt.music.widget.AutoBgButton
+            android:id="@+id/btnBackward"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnPlay"
+            android:background="@drawable/btn_previous" />
+
+        <com.pt.music.widget.AutoBgButton
+            android:id="@+id/btnPlay"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_pause" />
+
+        <com.pt.music.widget.AutoBgButton
+            android:id="@+id/btnForward"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnPlay"
+            android:background="@drawable/btn_next" />
+
+        <ToggleButton
+            android:id="@+id/btnRepeat"
+            style="@style/ToggleButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_repeat" />
+    </RelativeLayout>
+
+</LinearLayout>

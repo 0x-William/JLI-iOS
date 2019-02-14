@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue_sky">#3498db</color>
+    <color name="divider">#3f4552</color>
+    <color name="blue">#0099cc</color>
+    <color name="cyan">#62c6c7</color>
+    <color name="gray_dark">#3e4a43</color>
+    <color name="green">#239e26</color>
+    <color name="orange">#ffa80c</color>
+    <color name="white">#ffffff</color>
+
+</resources>

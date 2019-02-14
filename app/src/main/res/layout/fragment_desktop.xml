@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    android:background="#E65000"
+    tools:context=".fragment.SettingsFragment">
+
+
+
+    <include layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:visibility="visible"
+        android:id="@+id/desktop_header">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/prevDBtn"
+            android:background="@drawable/ic_arrow_left"
+            android:alpha="0.1"
+            android:layout_marginLeft="7dp" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/fwdDBtn"
+            android:background="@drawable/ic_arrow_right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-1dp"
+            android:alpha="0.1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:id="@+id/homeDBtn"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webAboutView"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="1dp" />
+
+</LinearLayout>

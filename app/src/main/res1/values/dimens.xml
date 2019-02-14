@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="player_thumb_imgSong_layout">230dp</dimen>
+    <dimen name="player_thumb_imgSong">150dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+
+    <dimen name="dimen_small">5dp</dimen>
+    <dimen name="dimen_normal">10dp</dimen>
+    <dimen name="dimen_mnormal">12dp</dimen>
+    <dimen name="dimen_xnormal">15dp</dimen>
+    <dimen name="dimen_large">20dp</dimen>
+    <dimen name="dimen_huge">50dp</dimen>
+
+    <!-- Width, height -->
+    <dimen name="dimen_notification_icon">50dp</dimen>
+    <dimen name="dimen_small_icon">20dp</dimen>
+    <dimen name="dimen_xsmall_icon">25dp</dimen>
+    <dimen name="dimen_normal_icon">30dp</dimen>
+    <dimen name="heigh_play_bar">30dp</dimen>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/group_popupmenu">
+        <item
+            android:id="@+id/menu_add_to_playlist"
+            android:icon="@drawable/ic_add_playlist"
+            android:orderInCategory="100"
+            android:title="@string/add_to_playlist"
+            android:visible="false"
+
+            android:showAsAction="always" />
+        <item
+            android:id="@+id/menu_download"
+            android:icon="@drawable/btn_download"
+            android:orderInCategory="100"
+            android:title="@string/download"
+            android:showAsAction="always" />
+        <item
+            android:id="@+id/menu_share"
+            android:icon="@drawable/btn_share"
+            android:orderInCategory="100"
+            android:title="@string/Share"
+            android:visible="false"
+            android:showAsAction="always" />
+        <item
+            android:id="@+id/menu_set_ringtone"
+            android:icon="@drawable/ic_ringstone"
+            android:orderInCategory="100"
+            android:title="@string/set_as_ringtone"
+            android:visible="false"
+            android:showAsAction="always" />
+        <item
+            android:id="@+id/menu_set_alarm"
+            android:icon="@drawable/ic_alarm"
+            android:orderInCategory="100"
+            android:title="@string/set_as_alarm"
+            android:visible="false"
+            android:showAsAction="always" />
+        <item
+            android:id="@+id/menu_set_notification"
+            android:icon="@drawable/ic_notification"
+            android:orderInCategory="100"
+            android:title="@string/set_as_notification"
+            android:visible="false"
+            android:showAsAction="always" />
+        <item
+            android:id="@+id/menu_set_contact"
+            android:icon="@drawable/ic_contact"
+            android:orderInCategory="100"
+            android:title="@string/set_as_contact_ringtone"
+            android:visible="false"
+            android:showAsAction="always" />
+    </group>
+
+</menu>

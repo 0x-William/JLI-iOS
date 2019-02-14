@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.FillWidthHeight"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        style="@style/Layout.FillWidthHeight"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_splash"/>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|center_vertical"
+    android:gravity="center|center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e3dfde"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="#dfd9d9"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_noti" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:paddingLeft="@dimen/dimen_mnormal"
+            android:paddingStart="@dimen/dimen_mnormal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lbl_song_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical|start"
+                android:text="Song Name"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/dimen_mnormal" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lbl_singer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:singleLine="true"
+                android:text="Singer"
+                android:textColor="#f04000"
+                android:textSize="@dimen/dimen_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:layout_gravity="center_vertical|end"
+                android:paddingRight="@dimen/dimen_mnormal"
+            	android:paddingEnd="@dimen/dimen_mnormal"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/btnBackward"
+                    android:layout_width="@dimen/dimen_xsmall_icon"
+                    android:layout_height="@dimen/dimen_xsmall_icon"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/btn_previous"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageButton
+                    android:id="@+id/btnPlay"
+                    android:layout_width="@dimen/dimen_xsmall_icon"
+                    android:layout_height="@dimen/dimen_xsmall_icon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_normal"
+                    android:layout_marginRight="@dimen/dimen_normal"
+                    android:background="@drawable/btn_pause"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageButton
+                    android:id="@+id/btnForward"
+                    android:layout_width="@dimen/dimen_xsmall_icon"
+                    android:layout_height="@dimen/dimen_xsmall_icon"
+                    android:layout_gravity="center_vertical"                    
+                    android:background="@drawable/btn_next"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

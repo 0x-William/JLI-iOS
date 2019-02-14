@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    android:gravity="center"
+    tools:context=".fragment.PlayerThumbFragment" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="@dimen/player_thumb_imgSong_layout"
+            android:layout_height="@dimen/player_thumb_imgSong_layout"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_thumnail"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/imgSong"
+            android:layout_width="@dimen/player_thumb_imgSong"
+            android:layout_height="@dimen/player_thumb_imgSong"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_music_node" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Layout.FillWidth"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:visibility="gone">
+
+        <com.pt.music.widget.AutoBgButton
+            android:id="@+id/btnDownload"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_download" />
+
+        <TextView
+            android:id="@+id/lblNumberDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnDownload"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <com.pt.music.widget.AutoBgButton
+            android:id="@+id/btnShare"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/lblNumberListen"
+            android:background="@drawable/btn_share" />
+
+        <TextView
+            android:id="@+id/lblNumberListen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@android:color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/lblNameSong"
+        style="@style/Text.Title.White"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblArtist"
+        style="@style/Text.Title.White"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever" />
+
+</LinearLayout>

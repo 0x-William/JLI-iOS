@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    tools:context=".fragment.SearchFragment" >
+
+    <include layout="@layout/layout_header" />
+
+    <LinearLayout
+        style="@style/Layout.FillWidth"
+        android:background="@drawable/bg_search_bar"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/txtKeyword"
+            style="@style/Layout.Weight.Width"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" />
+
+        <com.pt.music.widget.AutoBgButton
+            android:id="@+id/btnSearch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_search" />
+    </LinearLayout>
+
+    <RelativeLayout style="@style/Layout.FillWidthHeight" >
+
+        <ImageView
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_search"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            style="@style/Layout.FillWidthHeight"
+            android:background="@drawable/bg_white_transparent"
+            android:contentDescription="@string/app_name" />
+
+        <!--
+             <ListView
+            android:id="@+id/lsvResult"
+            style="@style/ListView" />
+        -->
+
+        <com.pt.music.widget.pulltorefresh.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lsvResult"
+            style="@style/ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1px"
+            ptr:ptrMode="both" />
+
+        <TextView
+            android:id="@+id/lblNoResult"
+            style="@style/Text.Title.Bold"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/noFoundMatch"
+            android:textColor="@color/blue_sky"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

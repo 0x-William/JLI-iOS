@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    android:background="@android:color/white"
+    tools:context=".fragment.SettingsFragment">
+
+
+
+    <include layout="@layout/layout_header" />
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webForumView"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"/>
+
+</LinearLayout>

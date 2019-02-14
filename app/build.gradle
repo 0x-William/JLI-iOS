@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.pt.music"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 203
+        versionName "2.1"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+repositories {
+    maven {
+        url 'https://dl.bintray.com/intercom/intercom-maven'
+    }
+}
+
+dependencies {
+    compile files('libs/android-query.0.26.7.jar')
+    compile files('libs/httpmime-4.1.1.jar')
+    compile 'io.intercom.android:intercom-sdk:3.+'
+    compile 'com.google.android.gms:play-services-gcm:9.8.0'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.android.support:support-v4:24.0.1'
+    compile 'com.android.support:multidex:1.0.0'
+}
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/group_popupmenu" >
+        <item
+            android:id="@+id/menu_sort_by_default"
+            android:orderInCategory="100"
+            android:showAsAction="always"
+            android:title="@string/sort_by_id"
+            android:visible="true"/>
+        <item
+            android:id="@+id/menu_sort_by_views"
+            android:orderInCategory="100"
+            android:showAsAction="always"
+            android:title="@string/sort_by_views"
+            android:visible="true"/>
+        <item
+            android:id="@+id/menu_sort_by_download"
+            android:orderInCategory="100"
+            android:showAsAction="always"
+            android:title="@string/sort_by_download"
+            android:visible="true"/>
+    </group>
+
+</menu>

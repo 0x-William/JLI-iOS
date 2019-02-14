@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    android:background="@android:color/white"
+    tools:context=".fragment.SettingsFragment" >
+
+    <include layout="@layout/layout_header" />
+
+    <com.pt.music.widget.AutoBgLinearLayout
+        android:id="@+id/layoutLanguage"
+        style="@style/Layout.FillWidth.Vertical"
+        android:background="@drawable/bg_white"
+        android:visibility="gone"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/lblLanguage"
+            style="@style/Text.Title.Black"
+            android:layout_marginBottom="5dp"
+            android:text="@string/language" />
+
+        <TextView
+            android:id="@+id/lblLanguageSelect"
+            style="@style/Text.Content.DarkerGray"
+            android:text="@string/vietnamese" />
+    </com.pt.music.widget.AutoBgLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="@android:color/darker_gray" />
+
+    <com.pt.music.widget.AutoBgTextView
+        android:id="@+id/lblAbout"
+        style="@style/Text.Title.Black"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_white"
+        android:paddingBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="@string/about" />
+
+</LinearLayout>

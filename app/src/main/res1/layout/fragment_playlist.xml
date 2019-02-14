@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    android:background="@drawable/bg_app" >
+
+    <include layout="@layout/layout_header" />
+
+    <com.pt.music.widget.AutoBgLinearLayout
+        android:id="@+id/layoutCreatNewPlaylist"
+        style="@style/Layout.FillWidth.Vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_header_cyan"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/Text.Shadow"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_add_playlist"
+            android:drawablePadding="10dp"
+            android:text="@string/creatNewPlaylist"
+            android:textSize="17sp" />
+    </com.pt.music.widget.AutoBgLinearLayout>
+
+    <ListView
+        android:id="@+id/lsvPlaylist"
+        style="@style/ListView"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1px" />
+
+</LinearLayout>

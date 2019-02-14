@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSong"
+    style="@style/Layout.FillWidth.Vertical"
+    android:background="@drawable/bg_app">
+
+    <include layout="@layout/layout_header" />
+
+    <com.pt.music.widget.pulltorefresh.PullToRefreshGridView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/grvAlbum"
+        style="@style/Layout.FillWidthHeight"
+        android:layout_margin="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        ptr:ptrMode="both" />
+
+</LinearLayout>

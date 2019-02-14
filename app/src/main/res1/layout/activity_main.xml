@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.FillWidthHeight"
+    tools:context=".activity.MainActivity" >
+
+    <fragment
+        android:id="@+id/fragmentListSongs"
+        android:name="com.pt.music.fragment.ListSongsFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentAlbum"
+        android:name="com.pt.music.fragment.AlbumFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentCategoryMusic"
+        android:name="com.pt.music.fragment.CategoryMusicFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentPlaylist"
+        android:name="com.pt.music.fragment.PlaylistFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentSearch"
+        android:name="com.pt.music.fragment.SearchFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentSetting"
+        android:name="com.pt.music.fragment.SettingsFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentAbout"
+        android:name="com.pt.music.fragment.AboutFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentForum"
+        android:name="com.pt.music.fragment.ForumFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <fragment
+        android:id="@+id/fragmentPlayer"
+        android:name="com.pt.music.fragment.PlayerFragment"
+        style="@style/Layout.FillWidthHeight" />
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layoutPlayerFooter"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/adView"
+            android:background="@drawable/bg_player_footer"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/imgSongFooter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_music_node_small" />
+
+            <LinearLayout
+                style="@style/Layout.Weight.Width"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lblSongNameFooter"
+                    style="@style/Text.Title.White"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:text="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/lblArtistFooter"
+                    style="@style/Text.Content.White"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="@string/app_name" />
+            </LinearLayout>
+
+            <com.pt.music.widget.AutoBgButton
+                android:id="@+id/btnPreviousFooter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_btn_previous_small" />
+
+            <com.pt.music.widget.AutoBgButton
+                android:id="@+id/btnPlayFooter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_btn_pause_small" />
+
+            <com.pt.music.widget.AutoBgButton
+                android:id="@+id/btnNextFooter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_btn_next_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</RelativeLayout>

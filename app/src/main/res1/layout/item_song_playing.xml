@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSong"
+    style="@style/Layout.FillWidth.Vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/lblName"
+        style="@style/Text.Title"
+        android:layout_marginBottom="5dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/lblArtist"
+        style="@style/Text.Content.DarkerGray"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/cyan"
+        android:textStyle="italic" />
+
+</LinearLayout>

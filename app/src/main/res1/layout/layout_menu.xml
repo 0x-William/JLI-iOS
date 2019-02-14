@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_header"
+        android:gravity="center"
+        android:text="@string/menu_header"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/divider"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/lblTopChart"
+        style="@style/Text.Menu"
+        android:background="@drawable/bg_item_menu_select"
+        android:drawableLeft="@drawable/ic_top_chart"
+        android:text="@string/suggested_tracks"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/bg_divider"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/lblAllSong"
+        style="@style/Text.Menu"
+        android:drawableLeft="@drawable/ic_top_chart"
+        android:text="@string/allSong"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/bg_divider"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lblNominations"
+        style="@style/Text.Menu"
+        android:drawableLeft="@drawable/ic_nominations"
+        android:text="@string/collections"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/lblCategoryMusic"
+        style="@style/Text.Menu"
+        android:background="@drawable/bg_item_menu_select"
+        android:drawableLeft="@drawable/ic_lessonrecordings"
+        android:text="@string/courses" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/lblForum"
+        style="@style/Text.Menu"
+        android:drawableLeft="@drawable/ic_forum"
+        android:text="@string/forum"/>
+
+    <TextView
+        android:id="@+id/lblPlaylist"
+        style="@style/Text.Menu"
+        android:drawableLeft="@drawable/ic_playlist"
+        android:text="@string/playlist"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"
+        />
+
+    <TextView
+        android:id="@+id/lblSearch"
+        style="@style/Text.Menu"
+        android:drawableLeft="@drawable/ic_search"
+        android:text="@string/search"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/bg_divider"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/lblDashboard"
+        style="@style/Text.Menu"
+        android:drawableLeft="@drawable/ic_marketing"
+        android:text="@string/dashboard" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/lblGoodApp"
+        style="@style/Text.Menu"
+        android:drawableLeft="@drawable/ic_play_store"
+        android:text="@string/goodApp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/bg_divider"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/lblAbout"
+        style="@style/Text.Menu"
+        android:drawableLeft="@drawable/ic_feedback"
+        android:text="@string/feedback" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"
+        />
+
+    <TextView
+        android:id="@+id/lblExitApp"
+        style="@style/Text.Menu"
+        android:drawableLeft="@drawable/ic_exit"
+        android:text="@string/exitApp"
+        android:visibility="gone" />
+
+</LinearLayout>

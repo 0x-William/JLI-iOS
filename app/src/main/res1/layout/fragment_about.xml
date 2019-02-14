@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    android:background="@android:color/white"
+    tools:context=".fragment.SettingsFragment">
+
+
+
+    <include layout="@layout/layout_header" />
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webAboutView"
+        android:layout_gravity="bottom"
+        />
+
+</LinearLayout>

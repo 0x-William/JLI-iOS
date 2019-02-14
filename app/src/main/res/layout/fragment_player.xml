@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout.FillWidthHeight.Vertical"
+    android:background="@drawable/bg_music_player"
+    android:gravity="center_horizontal" >
+
+    <include layout="@layout/layout_header" />
+
+    <LinearLayout
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_margin="15dp"
+        >
+
+        <View
+            android:id="@+id/viewIndicatorList"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:background="@drawable/indicator_white" />
+
+        <View
+            android:id="@+id/viewIndicatorThumb"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/indicator_white" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        style="@style/Layout.Weight.HeightFillWidth" />
+
+    <LinearLayout
+        style="@style/Layout.FillWidth.Vertical"
+        android:layout_margin="10dp" >
+
+        <SeekBar
+            android:id="@+id/seekBarLength"
+            style="@style/Layout.Weight.Width"
+            android:progressDrawable="@color/white"
+            android:maxHeight="1dp"
+            android:layout_width="match_parent" />
+
+        <RelativeLayout
+            style="@style/Layout.FillWidth"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblTimeCurrent"
+                style="@style/Text.WrapWidth"
+                android:text="@string/timeStart"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/lblTimeLength"
+                style="@style/Text.WrapWidth"
+                android:layout_alignParentRight="true"
+                android:text="@string/timeStart"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="-120dp"
+        android:id="@+id/speedLayout"
+        android:visibility="invisible"
+        android:background="#656464"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1x"
+            android:id="@+id/lblSpeed"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff" />
+
+        <SeekBar
+            android:id="@+id/speedSeeker"
+            style="@style/Layout.Weight.Width"
+            android:progressDrawable="@color/white"
+            android:maxHeight="1dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:max="15"
+            android:progress="5" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0.5x"
+            android:id="@+id/textView2"
+            android:textColor="#ffffff"
+            android:layout_marginTop="33dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="2.0x"
+            android:id="@+id/textView3"
+            android:layout_marginTop="33dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:id="@+id/speedNormal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:textColor="#ffffff"
+            android:background="#00ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/speedMinus"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/speedPlus"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="30dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <Button
+            android:id="@+id/btnToggleSpeed"
+            style="@style/Button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="1x"
+
+            android:textColor="#ffffff"
+            android:background="#00ffffff" />
+
+        <com.pt.music.widget.AutoBgButton
+            android:id="@+id/btnBackward"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnPlay"
+            android:background="@drawable/btn_previous" />
+
+        <com.pt.music.widget.AutoBgButton
+            android:id="@+id/btnPlay"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_pause" />
+
+        <com.pt.music.widget.AutoBgButton
+            android:id="@+id/btnForward"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnPlay"
+            android:background="@drawable/btn_next" />
+
+        <ToggleButton
+            android:id="@+id/btnRepeat"
+            style="@style/ToggleButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_repeat" />
+    </RelativeLayout>
+
+</LinearLayout>
